@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Elektrikçi Projesi | CKR TECH | index.html -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manisa Akhisar merkezli profesyonel elektrik tesisat ve mühendislik firması. Pano kurulumu, akıllı ev sistemleri, aydınlatma ve 7/24 acil servis hizmetleri." />
+  <meta name="keywords" content="elektrik tesisat, pano kurulumu, akıllı ev, Manisa, Akhisar, elektrik mühendislik" />
+  <meta name="author" content="CKR TECH" />
+  <meta property="og:title" content="CKR Elektrik | Güvenli Enerji, Kesintisiz Çözümler" />
+  <meta property="og:description" content="Manisa Akhisar merkezli profesyonel elektrik tesisat ve mühendislik firması." />
+  <meta property="og:type" content="website" />
+  <title>KOYUNLU Elektrik | Güvenli Enerji, Kesintisiz Çözümler</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--              LOADER EKRANI             -->
+  <!-- ═══════════════════════════════════════ -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__glow"></div>
+    <div class="loader__grid"></div>
+    <div class="loader__scanline"></div>
+
+    <div class="loader__inner">
+      <div class="loader__bolt-wrap">
+        <svg class="loader__bolt" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M34 2L4 46H28L26 78L56 34H32L34 2Z" stroke="#00f0ff" stroke-width="2" fill="none" class="bolt-path"/>
+          <path d="M34 2L4 46H28L26 78L56 34H32L34 2Z" fill="url(#loaderBoltGrad)" class="bolt-fill"/>
+          <defs>
+            <linearGradient id="loaderBoltGrad" x1="30" y1="2" x2="30" y2="78" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00f0ff" stop-opacity="1"/>
+              <stop offset="100%" stop-color="#0055ff" stop-opacity="0.8"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      
+      <div class="loader__text">
+        <span class="loader__brand">KOYUNLU</span>
+        <span class="loader__sub">ELEKTRİK</span>
+      </div>
+      
+      <div class="loader__bar">
+        <div class="loader__progress"></div>
+      </div>
+    </div>
+
+    <div class="loader__credit">
+      <span>DESIGNED BY</span> <strong>CKR TECH</strong>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--               NAVBAR                   -->
+  <!-- ═══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="lux-container navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="CKR Elektrik Ana Sayfa">
+        <svg class="logo-bolt" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1L2 23H14L13 39L28 17H16L17 1Z" fill="#00f0ff"/>
+        </svg>
+        <span class="logo-text">KOYUNLU <strong>ELEKTRİK</strong></span>
+      </a>
+
+      <nav class="navbar__nav" id="mainNav" role="navigation" aria-label="Ana Menü">
+        <a href="#hizmetler" class="nav-link">Hizmetler</a>
+        <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+        <a href="#surec" class="nav-link">Çalışma Süreci</a>
+        <a href="#iletisim" class="nav-link">İletişim</a>
+      </nav>
+
+      <a href="tel:+905001234567" class="btn-call" aria-label="Hemen Ara">
+        <span class="btn-call__icon">📞</span>
+        <span>Hemen Ara</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobil Menü -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#hizmetler" class="mobile-menu__link">Hizmetler</a>
+      <a href="#hakkimizda" class="mobile-menu__link">Hakkımızda</a>
+      <a href="#surec" class="mobile-menu__link">Çalıma Süreci</a>
+      <a href="#iletisim" class="mobile-menu__link">İletişim</a>
+      <a href="tel:+905001234567" class="btn-call mobile-menu__cta">📞 Hemen Ara</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════ -->
+    <!--              HERO BÖLÜMİ               -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Ana Başlık">
+      <!-- Arka plan katmanları -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__glow hero__glow--left"></div>
+        <div class="hero__glow hero__glow--right"></div>
+        <div class="hero__scanline"></div>
+      </div>
+
+      <div class="lux-container hero__content">
+        <div class="hero__badge rv">
+          <span class="badge-dot"></span>
+          Manisa Akhisar · Aktif Servis
+        </div>
+        <h1 class="hero__title rv">
+          Güvenli Enerji,<br/>
+          <span class="accent-text">Kesintisiz</span><br/>
+          Çözümler
+        </h1>
+        <p class="hero__sub rv">
+          20 yılı aşkın tecrübemizle Manisa, İzmir ve Balıkesir'de<br/>
+          profesyonel elektrik tesisat ve mühendislik hizmetleri sunuyoruz.
+        </p>
+        <div class="hero__ctas rv">
+          <a href="#iletisim" class="btn-primary">Teklif Al</a>
+          <a href="#hizmetler" class="btn-ghost">Hizmetlerimiz</a>
+        </div>
+
+        <!-- Hero alt bilgi şeridi -->
+        <div class="hero__badges rv">
+          <div class="hero-badge">
+            <span class="hero-badge__num">+500</span>
+            <span class="hero-badge__lbl">Tamamlanan Proje</span>
+          </div>
+          <div class="hero-badge__divider"></div>
+          <div class="hero-badge">
+            <span class="hero-badge__num">7/24</span>
+            <span class="hero-badge__lbl">Acil Servis</span>
+          </div>
+          <div class="hero-badge__divider"></div>
+          <div class="hero-badge">
+            <span class="hero-badge__num">+20</span>
+            <span class="hero-badge__lbl">Yıllık Tecrübe</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll göstergesi -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Aşağı Kaydır</span>
+        <div class="scroll-hint__line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--          HİZMETLERİMİZ (CAROUSEL)       -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section-services" id="hizmetler" aria-label="Hizmetlerimiz">
+      <div class="lux-container">
+        <div class="section-header rv">
+          <span class="section-tag">HİZMETLERİMİZ</span>
+          <h2 class="section-title">Neler Yapıyoruz?</h2>
+          <p class="section-desc">Endüstriyel ve konut projelerinde uçtan uca elektrik mühendisliği çözümleri.</p>
+        </div>
+
+        <!-- Carousel wrapper -->
+        <div class="carousel-wrapper rv">
+          <div class="services-carousel" id="servicesCarousel" role="list">
+
+            <article class="service-card" role="listitem">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="4" width="32" height="40" rx="3" stroke="#00f0ff" stroke-width="2"/><line x1="14" y1="14" x2="34" y2="14" stroke="#00f0ff" stroke-width="2"/><line x1="14" y1="20" x2="34" y2="20" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="3 2"/><line x1="14" y1="26" x2="28" y2="26" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="3 2"/><circle cx="34" cy="34" r="6" stroke="#ffcc00" stroke-width="2"/><path d="M34 31V34L36 36" stroke="#ffcc00" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="service-card__title">Pano Kurulumu & Bakım</h3>
+              <p class="service-card__desc">Endüstriyel ve konut tipi elektrik panolarının profesyonel kurulum, bakım ve onarım hizmetleri.</p>
+              <span class="service-card__arrow">→</span>
+            </article>
+
+            <article class="service-card" role="listitem">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="#00f0ff" stroke-width="2"/><circle cx="24" cy="24" r="6" stroke="#00f0ff" stroke-width="1.5"/><line x1="24" y1="4" x2="24" y2="10" stroke="#00f0ff" stroke-width="2"/><line x1="24" y1="38" x2="24" y2="44" stroke="#00f0ff" stroke-width="2"/><line x1="4" y1="24" x2="10" y2="24" stroke="#00f0ff" stroke-width="2"/><line x1="38" y1="24" x2="44" y2="24" stroke="#00f0ff" stroke-width="2"/><circle cx="24" cy="24" r="2" fill="#ffcc00"/></svg>
+              </div>
+              <h3 class="service-card__title">Akıllı Ev Sistemleri</h3>
+              <p class="service-card__desc">KNX, DALI ve IoT tabanlı otomasyon sistemleri ile evinizi geleceğe taşıyoruz.</p>
+              <span class="service-card__arrow">→</span>
+            </article>
+
+            <article class="service-card" role="listitem">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="18" r="10" stroke="#ffcc00" stroke-width="2"/><path d="M24 8V4M24 32V28" stroke="#ffcc00" stroke-width="2"/><path d="M17 11L14 8M31 28L34 31" stroke="#ffcc00" stroke-width="2"/><path d="M14 18H10M38 18H34" stroke="#ffcc00" stroke-width="2"/><rect x="16" y="32" width="16" height="4" rx="1" stroke="#00f0ff" stroke-width="1.5"/><rect x="18" y="36" width="12" height="8" rx="1" stroke="#00f0ff" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-card__title">Aydınlatma Çözümleri</h3>
+              <p class="service-card__desc">Enerji tasarruflu LED sistemler, mimari ve endüstriyel aydınlatma tasarım ve uygulaması.</p>
+              <span class="service-card__arrow">→</span>
+            </article>
+
+            <article class="service-card" role="listitem">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L44 14V24C44 34 34 42 24 46C14 42 4 34 4 24V14L24 4Z" stroke="#00f0ff" stroke-width="2"/><path d="M16 24L21 29L32 18" stroke="#ffcc00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3 class="service-card__title">Arıza Tespiti & Onarım</h3>
+              <p class="service-card__desc">Termal kamera ve dijital ölçüm cihazları ile hızlı arıza tespiti ve 7/24 acil müdahale.</p>
+              <span class="service-card__arrow">→</span>
+            </article>
+
+            <article class="service-card" role="listitem">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="14" y="12" width="20" height="16" rx="2" stroke="#00f0ff" stroke-width="2"/><circle cx="24" cy="20" r="4" stroke="#00f0ff" stroke-width="1.5"/><circle cx="24" cy="20" r="1.5" fill="#00f0ff"/><path d="M8 36C8 32 16 28 24 28C32 28 40 32 40 36" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/><rect x="6" y="36" width="36" height="8" rx="2" stroke="#ffcc00" stroke-width="1.5"/></svg>
+              </div>
+              <h3 class="service-card__title">Güvenlik Kamera Sistemleri</h3>
+              <p class="service-card__desc">IP kamera, NVR/DVR kurulumu ve uzaktan izleme sistemleri ile mülkünüzü güvence altına alın.</p>
+              <span class="service-card__arrow">→</span>
+            </article>
+
+          </div><!-- /services-carousel -->
+
+          <!-- Carousel dot navigation -->
+          <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Hizmet Slider"></div>
+          <!-- Carousel ok butonları (mobil) -->
+          
+        </div><!-- /carousel-wrapper -->
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--            İSTATİSTİKLER               -->
+    <!-- ═══════════════════════════════════════ -->
+   <section class="section-stats" id="hakkimizda" aria-label="İstatistikler">
+      <div class="stats-bg-line" aria-hidden="true"></div>
+      <div class="lux-container stats-grid">
+
+        <div class="stat-item rv">
+          <div class="stat-item__row">
+            <span class="stat-item__num" data-target="20">0</span>
+            <span class="stat-item__plus">+</span>
+          </div>
+          <span class="stat-item__label">Yıllık Tecrübe</span>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item rv">
+          <div class="stat-item__row">
+            <span class="stat-item__num" data-target="500">0</span>
+            <span class="stat-item__plus">+</span>
+          </div>
+          <span class="stat-item__label">Tamamlanan Proje</span>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item rv">
+          <div class="stat-item__row">
+            <span class="stat-item__num" data-target="7">0</span>
+            <span class="stat-item__suffix">/24</span>
+          </div>
+          <span class="stat-item__label">Acil Servis</span>
+        </div>
+
+        <div class="stat-divider" aria-hidden="true"></div>
+
+        <div class="stat-item rv">
+          <div class="stat-item__row">
+            <span class="stat-item__num" data-target="98">0</span>
+            <span class="stat-item__suffix">%</span>
+          </div>
+          <span class="stat-item__label">Müşteri Memnuniyeti</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--       ETKİLEŞİMLİ HİZMET HARİTASI      -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section-process" id="surec" aria-label="Çalışma Sürecimiz">
+      <div class="lux-container">
+        <div class="section-header rv">
+          <span class="section-tag">İŞLEYİŞ</span>
+          <h2 class="section-title">Nasıl Çalışıyoruz?</h2>
+          <p class="section-desc">Projenizin ilk anından anahtar teslim anına kadar tüm süreçleri şeffaf, planlı ve yüksek mühendislik standartlarında yürütüyoruz.</p>
+        </div>
+
+        <div class="process-grid">
+          
+          <div class="process-card rv">
+            <div class="process-card__number">01</div>
+            <div class="process-card__content">
+              <h3 class="process-card__title">Keşif & Analiz</h3>
+              <p class="process-card__desc">Alanında uzman teknik ekibimizle yerinde incelemeler yapıyor, altyapı ihtiyaçlarını ve risk analizi parametrelerini netleştiriyoruz.</p>
+            </div>
+          </div>
+
+          <div class="process-card rv">
+            <div class="process-card__number">02</div>
+            <div class="process-card__content">
+              <h3 class="process-card__title">Mühendislik & Proje</h3>
+              <p class="process-card__desc">Uluslararası standartlara ve yerel yönetmeliklere uygun elektrik şemalarını, yük hesaplamalarını ve mimari çizimleri hazırlıyoruz.</p>
+            </div>
+          </div>
+
+          <div class="process-card rv">
+            <div class="process-card__number">03</div>
+            <div class="process-card__content">
+              <h3 class="process-card__title">Kusursuz Uygulama</h3>
+              <p class="process-card__desc">Onaylanan projeyi, en yüksek segmente sahip sertifikalı fırçalanmış malzemeler ve sıfır hata hedefleyen milimetrik işçilikle uyguluyoruz.</p>
+            </div>
+          </div>
+
+          <div class="process-card rv">
+            <div class="process-card__number">04</div>
+            <div class="process-card__content">
+              <h3 class="process-card__title">Test & Teslimat</h3>
+              <p class="process-card__desc">Sistemleri dijital kalibreli ölçüm cihazları ve termal kameralarla zorlu testlerden geçirerek, anahtar teslim ve tam güvenli şekilde teslim ediyoruz.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!--           İLETİŞİM BÖLÜMİ              -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section-contact" id="iletisim" aria-label="İletişim">
+      <div class="lux-container contact-inner">
+
+        <div class="contact-info rv">
+          <h2 class="contact-info__title">Hızlı İletişim</h2>
+          <p class="contact-info__desc">Ücretsiz keşif, kurumsal proje danışmanlığı veya 7/24 acil arıza talepleriniz için bize doğrudan ulaşabilirsiniz.</p>
+          
+          <div class="contact-info__list">
+            <div class="contact-info__item">
+              <div class="contact-info__icon phone-theme">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-info__text">
+                <span class="info-label">Çağrı Merkezi</span>
+                <a href="tel:+905457189865" class="info-value">+90 545 718 98 65</a>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon wa-theme">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </div>
+              <div class="contact-info__text">
+                <span class="info-label">WhatsApp Hattı</span>
+                <a href="https://wa.me/905457189865" target="_blank" class="info-value">Hemen Mesaj Gönder</a>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon location-theme">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-info__text">
+                <span class="info-label">Merkez Ofis</span>
+                <span class="info-value">Akhisar, Manisa</span>
+              </div>
+            </div>
+          </div> <div class="social-links" style="display:flex; gap:1.2rem; margin-top:2.5rem; padding-left:1rem;">
+            <a href="https://instagram.com/koyunluerdem" aria-label="Instagram" style="color:var(--text-secondary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com/erdem.koyunlu.12?locale=tr_TR" aria-label="Facebook" style="color:var(--text-secondary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+
+        </div>
+
+<div class="contact-form-wrap rv">
+          <form class="contact-form" id="contactForm" onsubmit="sendToWhatsApp(event)">
+            
+            <div class="form-group">
+              <label for="name" class="form-label">Ad Soyad *</label>
+              <input type="text" id="name" class="form-input" placeholder="Adınız Soyadınız" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Telefon Numaranız *</label>
+              <input type="tel" id="phone" class="form-input" placeholder="05XX XXX XX XX" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="service" class="form-label">Hizmet Türü</label>
+              <select id="service" class="form-input">
+                <option value="">Hizmet Seçiniz...</option>
+                <option value="Pano Kurulumu">Pano Kurulumu & Bakım</option>
+                <option value="Akıllı Ev">Akıllı Ev Sistemleri</option>
+                <option value="Aydınlatma">Aydınlatma Çözümleri</option>
+                <option value="Arıza Tespiti">Arıza Tespiti & Onarım</option>
+                <option value="Kamera">Güvenlik Kamera Sistemleri</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Mesajınız (İsteğe Bağlı)</label>
+              <textarea id="message" class="form-input form-textarea" placeholder="Projenizi kısaca belirtiniz..."></textarea>
+            </div>
+            
+            <div class="form-check">
+              <input type="checkbox" id="kvkk" class="form-checkbox" required />
+              <label for="kvkk" class="form-checkbox-label">
+                <a href="kvkk.html" target="_blank" class="policy-link">KVKK Aydınlatma Metni</a>'ni okudum. *
+              </label>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit-btn">
+              <span>Talep Oluştur (WhatsApp)</span>
+            </button>
+            
+            <div class="form-success" id="formSuccess" style="display:none; color: #25D366; margin-top: 1rem; font-weight: 600;">
+              ✅ Yönlendiriliyor...
+            </div>
+          </form>
+
+          <script>
+            function sendToWhatsApp(e) {
+              e.preventDefault(); // Sayfanın başa atmasını kesin engeller
+
+              const name = document.getElementById('name').value.trim();
+              const phone = document.getElementById('phone').value.trim();
+              const serviceEl = document.getElementById('service');
+              const service = serviceEl.value ? serviceEl.options[serviceEl.selectedIndex].text : 'Belirtilmedi';
+              
+              const rawMessage = document.getElementById('message').value.trim();
+              const message = rawMessage ? rawMessage : 'Belirtilmedi';
+
+              const waMessage = `Merhaba KOYUNLU Elektrik,\nWeb sitenizden yeni bir talep oluşturdum:\n\n*Ad Soyad:* ${name}\n*Telefon:* ${phone}\n*Hizmet:* ${service}\n*Detay:* ${message}`;
+              
+              const waUrl = `https://wa.me/905457189865?text=${encodeURIComponent(waMessage)}`;
+
+              document.getElementById('formSuccess').style.display = 'block';
+
+              // İŞTE BURASI DEĞİŞTİ: Artık _blank parametresi ile yeni sekmede açacak
+              window.open(waUrl, '_blank');
+
+              // Formu temizle
+              setTimeout(() => {
+                document.getElementById('contactForm').reset();
+                document.getElementById('formSuccess').style.display = 'none';
+              }, 3000);
+            }
+          </script>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--               FOOTER                   -->
+  <!-- ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="lux-container footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="navbar__logo" aria-label="CKR Elektrik">
+            <svg class="logo-bolt" viewBox="0 0 30 40" fill="none"><path d="M17 1L2 23H14L13 39L28 17H16L17 1Z" fill="#00f0ff"/></svg>
+            <span class="logo-text">KOYUNLU <strong>ELEKTRİK</strong></span>
+          </a>
+          <p class="footer-brand__desc">Manisa / Akhisar merkezimizden Manisa İline'ne güvenilir ve profesyonel elektrik mühendisliği hizmetleri.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Hizmetler</h4>
+          <ul>
+            <li><a href="#hizmetler">Pano Kurulumu & Bakım</a></li>
+            <li><a href="#hizmetler">Akıllı Ev Sistemleri</a></li>
+            <li><a href="#hizmetler">Aydınlatma Çözümleri</a></li>
+            <li><a href="#hizmetler">Arıza Tespiti</a></li>
+            <li><a href="#hizmetler">Güvenlik Kameraları</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Hızlı Erişim</h4>
+          <ul>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#surec">Çalışma Süreci</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+            <li><a href="kvkk.html" id="kvkk-policy">KVKK Politikası</a></li>
+            <li><a href="cerez.html" id="cookie-policy">Çerez Politikası</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">İletişim</h4>
+ <div class="footer-info-list">
+            <div class="footer-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-svg">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Merkez: Akhisar, Manisa</span>
+            </div>
+            
+            <div class="footer-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="info-svg">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+              <span>Akhisar Bölgesine 7/24 Servis</span>
+            </div>
+          </div>
+          
+          <div class="contact-icon-group">
+            <a href="tel:+905457189865" class="glass-icon-btn phone-theme" aria-label="Bizi Arayın">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+            
+            <a href="https://wa.me/905457189865" class="glass-icon-btn wa-theme" target="_blank" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </a>
+
+            <a href="https://instagram.com/koyunluerdem" class="glass-icon-btn ig-theme" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="lux-container footer-bottom-inner">
+        <p class="footer-copy">© 2015-2026 KOYUNLU Elektrik. Tüm hakları saklıdır.</p>
+        <p class="footer-credit">
+          <a href="gizlilik.html" class="footer-credit__link">Gizlilik Politikası</a>
+          <span>·</span>
+          <a href="kvkk.html" class="footer-credit__link">KVKK</a>
+          <span>·</span>
+          <a href="cerez.html" class="footer-credit__link">Çerezler</a>
+          <span>·</span>
+          Geliştiren: <strong>CKR TECH</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/905457189865" class="float-wa" target="_blank" aria-label="WhatsApp'tan Bize Ulaşın">
+    <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!--           ÇEREZ BANNER                 -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Çerez Bildirimi" aria-hidden="true">
+    <div class="cookie-banner__content">
+      <p>🍪 Web sitemiz daha iyi bir deneyim sunmak için çerezler kullanmaktadır. Devam ederek <a href="#cookie-policy">Çerez Politikamızı</a> kabul etmiş olursunuz.</p>
+    </div>
+    <div class="cookie-banner__actions">
+      <button class="btn-ghost cookie-btn" id="cookieDecline">Reddet</button>
+      <button class="btn-primary cookie-btn" id="cookieAccept">Kabul Et</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+</html>
