@@ -243,7 +243,7 @@
   backdrop-filter: var(--blur-glass);
   -webkit-backdrop-filter: var(--blur-glass);
   border-color: var(--border-subtle);
-  padding: 0.8rem 0;
+  padding: 0.7rem 0;
 }
 
 .navbar__inner {
@@ -347,8 +347,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
   padding: 6px;
@@ -389,10 +389,10 @@
 
 .mobile-menu__link {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--text-secondary);
-  padding: 0.9rem 0.5rem;
+  padding: 0.8rem 0.5rem;
   border-bottom: 1px solid var(--border-subtle);
   transition: color var(--duration-fast) ease;
 }
@@ -547,8 +547,12 @@
 }
 
 .cookie-btn {
-  font-size: 0.82rem;
-  padding: 0.55em 1.2em;
+  font-size: 0.85rem;
+  padding: 0.7em 1.4em;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ── 6. RESPONSIVE LAYOUT ─────────────────────────────────── */
